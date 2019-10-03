@@ -1,9 +1,7 @@
 package com.shiraz.client;
 
 import org.springframework.web.client.RestTemplate;
-
 import java.util.Random;
-
 import static java.lang.Math.*;
 
 /**
@@ -32,6 +30,4 @@ public class Player1Client {
     public Integer getStartNumber() {
         return new Random().nextInt(10000) + 1;
     }
-
-
 }
