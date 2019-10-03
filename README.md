@@ -36,7 +36,8 @@ Naturally, the winner is announced!
 
 #### Note: 
 Player1 can be started with a pre-chosen number by providing this number as a parameter (ideal for testing)
-although this might be construed as cheating since a specific numbers yield a predetermined outcome.
+although this might be construed as cheating since specific numbers yield a predetermined outcome.
+Example:
 
     $ java -jar client\target\client-0.0.1-SNAPSHOT.jar 123
     
