@@ -14,7 +14,7 @@ public class Player1Client {
     public static void main(String[] args) {
 
         RestTemplate restTemplate = new RestTemplate();
-        // request a starting number from the server..
+        // request a starting number from the server if not provided as argument..
         Integer value = args.length > 0 ? Integer.parseInt(args[0]) :  restTemplate.getForObject("http://localhost:8080/start", Integer.class);
         System.out.println("Player1: starting value obtained = " + value);
 

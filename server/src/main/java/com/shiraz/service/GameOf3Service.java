@@ -12,7 +12,7 @@ import java.util.Random;
 @Service
 public class GameOf3Service {
 
-    private static final int OTHER_PLAYER_LOOSES = -1;
+    private static final int I_WIN_AND_YOU_LOOSE = -1;
 
     public Integer getStartNumber() {
         return new Random().nextInt(10000) + 1;
@@ -20,10 +20,10 @@ public class GameOf3Service {
 
     public Integer getNextNumber(Integer num) {
         log.info("Player2: value received from Player1 = " + num);
-        long newValue = Math.round(((double) num) / 3);
+        long newValue = Math.round(((double) num) / 3); // thanks to Nick for this!
         if (newValue == 1) {
             log.info("Player2: WINNER!");
-            return OTHER_PLAYER_LOOSES;
+            return I_WIN_AND_YOU_LOOSE;
         }
         log.info("Player2: sending newValue = {}", newValue);
         return Math.toIntExact(newValue);
