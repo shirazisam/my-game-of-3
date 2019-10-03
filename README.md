@@ -45,3 +45,6 @@ Player2 wins
 
 Player1 wins
 
+#### Note2:
+Linux users replace backslashes (\\) with forward slashes(/) in pathnames 
+(but you already knew that ;) )
