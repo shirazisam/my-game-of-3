@@ -31,6 +31,9 @@ Now launch the client (Player1) in another terminal to start the game!
     $ java -jar client\target\client-0.0.1-SNAPSHOT.jar
     
     
+Each player prints what value they receive and the new recalculated value they send.
+Naturally, the winner is announced!
+
 #### Note: 
 Player1 can be started with a pre-chosen number by providing this number as a parameter (ideal for testing)
 although this might be construed as cheating since a specific numbers yield a predetermined outcome.
