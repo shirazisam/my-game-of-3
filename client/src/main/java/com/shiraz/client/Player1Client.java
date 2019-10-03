@@ -21,7 +21,7 @@ public class Player1Client {
         while (value > 1) {
             System.out.println("Player1: sending value " + value);
             value = restTemplate.getForObject("http://localhost:8080/send/" + value, Integer.class);
-            System.out.println("Player1: value received by Player2 = " + value);
+            System.out.println("Player1: value received from Player2 = " + value);
             value = toIntExact(round(((double) value) / 3));  // thanks Nick ;)
         }
         if (value == 1) {
